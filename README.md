@@ -46,20 +46,32 @@ As part of my Masterschool course I created a home lab using Virtual Box to part
   <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/2bd03087-0d8e-4e38-847a-6e33aff63b7b" height="80%" width="80%" alt="the settings menu in Virtual box shows the advanced tab and next to the options for shared clipboard and drag 'n drop the bidirectional option is selected."/>
   <br />
   <br />
-  Step Two: <br />
-
-  <img src="" height="80%" width="80%" alt="image two"/>
+  Next, I opened Edit Group Policy<br />
+  <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/a030fc26-89e0-43cf-b073-5dd94234c7f2" height="80%" width="80%" alt="windows menu with edit group policy at the top."/>
   <br />
   <br />
-  Step Three: <br />
-  <img src="" height="80%" width="80%" alt="image three"/>
+  And navigated to the automatic updates policy under Computer Configuration - Administrative Templates - Windows Components - Windows Update<br />
+  <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/08d849ae-6ae9-4613-b290-4e4a39fe14b6" height="80%" width="80%" alt="local group policy editor window navigated to configure automatic updates in the selection."/>
    <br />
   <br />
-  Step Four: <br />
-  <img src="" height="80%" width="80%" alt="image four"/>
+  I configured automatic updates to disabled.<br />
+  <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/8d4af3ed-a416-412f-a899-da8cf78c5c07" height="80%" width="80%" alt="automatic updates configuration window with the radio button disabled chosen."/>
    <br />
   <br />
-  Step Five: <br />
-  <img src="" height="80%" width="80%" alt="image five"/>
+ Next, I navigated to the Microsoft Defender Antivirus configurations to turn off Microsoft Defender Antivirus.<br />
+  <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/a651c9ad-2436-403f-9775-b108e4b06eb4" height="80%" width="80%" alt="local group policy editor window with turn off microsoft defender antivirus selected."/>
+  <br />
+  <br />
+  <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/a0756d5c-39e9-426e-9c56-cc9b4a433cd3" height="80%" width="80%" alt="turn off microsoft defender antivirus configuration window with the radio button for enabled selected."/>
+   <br />
+  <br />
+ The last configuration I made was to disabled real time protection. This configuration is found under the Microsoft Defender Antivirus.<br />
+  <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/54ea9b84-e103-4ee0-bc9c-554940e951bd" height="80%" width="80%" alt="local group policy editor window with turn off real time protection selected."/>
+  <br />
+  <br />
+  <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/3f7aa8e7-05d1-4571-b1eb-b061ce11bf67" height="80%" width="80%" alt="turn off real time protection configuration window with the radio button for enabled selected."/>
+  <br />
+  <br />
+  Finally, I took a snapshot of the Windows 10 machine using Virtual Box so that I could restore to this point before I have installed Flare if I want to.<br />
+  <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/d1e3e792-7adb-4c05-8934-2200178d594a" height="80%" width="80%" alt="the snapshots window for creating a new snapshot in virtual box showing snapshot name 'Pre-Flare Installation' and the description 'The state of the machine prior to installing Flare'."/>
 </p>
-
