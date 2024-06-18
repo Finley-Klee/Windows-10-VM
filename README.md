@@ -2,12 +2,13 @@
 In this project I am beginning the set up of a home lab by creating a virtual instance of Windows 10 in Virtual Box on my personal laptop.
 
 <h2>Description</h2>
-As part of my Masterschool course I created a home lab using Virtual Box to participate in projects during our live sessions. This project details the creation of a virtual Windows 10 machine which will be used both as a "victim" machine for testing as well as for analysis. Since the Windows 10 machine will also be used for incident analysis, I am adding Mandiant's Flare-VM to this machine.
+As part of my Masterschool course I created a home lab using Virtual Box to participate in projects during our live sessions. This project details the creation of a virtual Windows 10 machine which will be used both as a "victim" machine for testing as well as for analysis. Since the Windows 10 machine will also be used for incident analysis, I am adding Sysmon and Mandiant's Flare-VM to this machine.
 
 <h2>Utilities Used</h2>
 
 - <b>Virtual Box</b> 
-- <b>Number 2</b>
+- <b>Windows Group Policy</b>
+- <b>PowerShell</b>
 
 <h2>Environments Used </h2>
 
@@ -31,17 +32,22 @@ As part of my Masterschool course I created a home lab using Virtual Box to part
    <br />
   <br />
   <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/3ce86dd9-7067-4869-80fe-63c33576de1e" height="80%" width="80%" alt="the virtual hard disk page of the create new machine window showing how much disk space to assign to the virtual machine for a virtual hard disk."/>
+   <br />
+  <br />
+  Lastly, I launched the virtual machine and completed the installer process for windows.<br />
+  <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/c3078c5a-26dd-427d-8082-0ccc7aea9e40" height="80%" width="80%" alt="Blue Windows setup window showing the progress of installing windows."/>
 </p>
 <br />
 <br />
-- <b>Section Name</b>
-<p>Description</p>
+- <b>Preparing to install Sysmon and Flare</b>
+<p>In order to download and intall Sysmon and Flare, I first had to temporarily disable auto-updates as well as tamper protections, anti-malware protections, and real time protection until the installation was finished.</p>
 <br>
-<p align="center">Step One: <br/>
-  <img src="" height="80%" width="80%" alt="image one"/>
+<p align="center">The first step was actually to enable bidirectional shared clipboard for the virtual machine, which I did in the advanced general settings of the machine in Virtual Box.<br/>
+  <img src="https://github.com/Finley-Klee/Windows-10-VM/assets/171582741/2bd03087-0d8e-4e38-847a-6e33aff63b7b" height="80%" width="80%" alt="the settings menu in Virtual box shows the advanced tab and next to the options for shared clipboard and drag 'n drop the bidirectional option is selected."/>
   <br />
   <br />
   Step Two: <br />
+
   <img src="" height="80%" width="80%" alt="image two"/>
   <br />
   <br />
@@ -56,5 +62,4 @@ As part of my Masterschool course I created a home lab using Virtual Box to part
   Step Five: <br />
   <img src="" height="80%" width="80%" alt="image five"/>
 </p>
-
 
